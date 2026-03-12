@@ -3,7 +3,6 @@
 }
 
 body {
-  /*E94F37*/
   background-color: #fffffb;
   color: #393E41;
   width: 100vw;
@@ -12,8 +11,10 @@ body {
 button {
   border: none;
   padding: 0.5rem 1rem;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: 400ms;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 button a {
@@ -21,24 +22,10 @@ button a {
   text-decoration: none;
 }
 
-
-.hero-section {
+footer {
   text-align: center;
-}
-
-.news-section {
-  text-align: center;
-}
-
-
-.news-section h1 {
-  border-bottom: 1px solid #393E41;
-  width: 80vw;
-  word-wrap: break-word;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  justify-items: center;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  color: #393E41;
+  font-size: 1rem;
 }
