@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fffffb;
+  color: #393E41;
+  width: 100vw;
+}
+
+button {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 400ms;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button a {
+  color: #393E41;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  color: #393E41;
+  font-size: 1rem;
+}

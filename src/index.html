@@ -1,15 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS News</title>
-    <link href="/styles/font.css" rel="stylesheet">
-  </head>
-  <body>
-    <h1>Write your code here</h1>
-    <p>Put the CSS in separate files in the <code><big>src/styles</big></code> folder and link them in the html file</p>
-    <script src="./bundle.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS News</title>
+  <link href="styles/style.css" rel="stylesheet">
+  <link href="styles/newsArticle.css" rel="stylesheet">
+  <link href="styles/font.css" rel="stylesheet">
+  <link href="styles/effect.css" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <section class="hero-section">
+      <h1>All the news</h1>
+      <h2>Welcome to my personal news outlet</h2>
+      <div class="nav-btn">
+        <button><a href="#breaking">Breaking</a></button>
+        <button><a href="#international">International</a></button>
+        <button><a href="#sports">Sports</a></button>
+      </div>
+    </section>
+    <section id="breaking" class="breaking-section news-section">
+      <h1>Breaking News</h1>
+      <div class="grid desktop-grid">
+
+        <article class="news-article">
+          <img class="news-article-img" src="https://picsum.photos/600/460" alt="News Image">
+          <div class="text-content">
+            <div class="news-content">
+              <h2>News Title</h2>
+              <p>News summary goes here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laborum distinctio
+                nostrum omnis, delectus ipsa adipisci voluptatibus. Doloribus provident magni, velit labore at obcaecati
+                sequi iure illo?</p>
+            </div>
+            <div class="details">
+              <p class="theme">Theme</p>
+              <div class="author-info">
+                <img src="https://picsum.photos/100/160" alt="Author Image">
+                <p class="author">John Doe</p>
+              </div>
+              <div class="flex-data">
+                <p class="date">October 10, 2023</p>
+                <p class="length">5 minutes read</p>
+              </div>
+              <div class="buttons">
+                <button class="news-btn"><a href="#"></a>Read</button>
+                <button class="news-btn"><a href="#"></a>Share</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="news-article">
+          <img class="news-article-img" src="https://picsum.photos/600/450" alt="News Image">
+          <div class="text-content">
+            <div class="news-content">
+              <h2>News Title</h2>
+              <p>News summary goes here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laborum distinctio
+                nostrum omnis, delectus ipsa adipisci voluptatibus. Doloribus provident magni, velit labore at obcaecati
+                sequi iure illo?</p>
+            </div>
+            <div class="details">
+              <p class="theme">Theme</p>
+              <div class="author-info">
+                <img src="https://picsum.photos/100/150" alt="Author Image">
+                <p class="author">John Doe</p>
+              </div>
+              <div class="flex-data">
+                <p class="date">October 10, 2023</p>
+                <p class="length">5 minutes read</p>
+              </div>
+              <div class="buttons">
+                <button class="news-btn"><a href="#"></a>Read</button>
+                <button class="news-btn"><a href="#"></a>Share</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="news-article">
+          <img class="news-article-img" src="https://picsum.photos/600/440" alt="News Image">
+          <div class="text-content">
+            <div class="news-content">
+              <h2>News Title</h2>
+              <p>News summary goes here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laborum distinctio
+                nostrum omnis, delectus ipsa adipisci voluptatibus. Doloribus provident magni, velit labore at obcaecati
+                sequi iure illo?</p>
+            </div>
+            <div class="details">
+              <p class="theme">Theme</p>
+              <div class="author-info">
+                <img src="https://picsum.photos/100/140" alt="Author Image">
+                <p class="author">John Doe</p>
+              </div>
+              <div class="flex-data">
+                <p class="date">October 10, 2023</p>
+                <p class="length">5 minutes read</p>
+              </div>
+              <div class="buttons">
+                <button class="news-btn"><a href="#"></a>Read</button>
+                <button class="news-btn"><a href="#"></a>Share</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="news-article">
+          <img class="news-article-img" src="https://picsum.photos/600/430" alt="News Image">
+          <div class="text-content">
+            <div class="news-content">
+              <h2>News Title</h2>
+              <p>News summary goes here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laborum distinctio
+                nostrum omnis, delectus ipsa adipisci voluptatibus. Doloribus provident magni, velit labore at obcaecati
+                sequi iure illo?</p>
+            </div>
+            <div class="details">
+              <p class="theme">Theme</p>
+              <div class="author-info">
+                <img src="https://picsum.photos/100/130" alt="Author Image">
+                <p class="author">John Doe</p>
+              </div>
+              <div class="flex-data">
+                <p class="date">October 10, 2023</p>
+                <p class="length">5 minutes read</p>
+              </div>
+              <div class="buttons">
+                <button class="news-btn"><a href="#"></a>Read</button>
+                <button class="news-btn"><a href="#"></a>Share</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+    <section id="international" class="international-section news-section">
+      <h1>International News</h1>
+      <div class="grid">
+
+
+        <article class="news-article">
+          <img class="news-article-img" src="https://picsum.photos/600/420" alt="News Image">
+          <div class="text-content">
+            <div class="news-content">
+              <h2>News Title</h2>
+              <p>News summary goes here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laborum distinctio
+                nostrum omnis, delectus ipsa adipisci voluptatibus. Doloribus provident magni, velit labore at obcaecati
+                sequi iure illo?</p>
+            </div>
+            <div class="details">
+              <p class="theme">Theme</p>
+              <div class="author-info">
+                <img src="https://picsum.photos/100/120" alt="Author Image">
+                <p class="author">John Doe</p>
+              </div>
+              <div class="flex-data">
+                <p class="date">October 10, 2023</p>
+                <p class="length">5 minutes read</p>
+              </div>
+              <div class="buttons">
+                <button class="news-btn"><a href="#"></a>Read</button>
+                <button class="news-btn"><a href="#"></a>Share</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="news-article">
+          <img class="news-article-img" src="https://picsum.photos/600/410" alt="News Image">
+          <div class="text-content">
+            <div class="news-content">
+              <h2>News Title</h2>
+              <p>News summary goes here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laborum distinctio
+                nostrum omnis, delectus ipsa adipisci voluptatibus. Doloribus provident magni, velit labore at obcaecati
+                sequi iure illo?</p>
+            </div>
+            <div class="details">
+              <p class="theme">Theme</p>
+              <div class="author-info">
+                <img src="https://picsum.photos/100/110" alt="Author Image">
+                <p class="author">John Doe</p>
+              </div>
+              <div class="flex-data">
+                <p class="date">October 10, 2023</p>
+                <p class="length">5 minutes read</p>
+              </div>
+              <div class="buttons">
+                <button class="news-btn"><a href="#"></a>Read</button>
+                <button class="news-btn"><a href="#"></a>Share</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="news-article">
+          <img class="news-article-img" src="https://picsum.photos/610/400" alt="News Image">
+          <div class="text-content">
+            <div class="news-content">
+              <h2>News Title</h2>
+              <p>News summary goes here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laborum distinctio
+                nostrum omnis, delectus ipsa adipisci voluptatibus. Doloribus provident magni, velit labore at obcaecati
+                sequi iure illo?</p>
+            </div>
+            <div class="details">
+              <p class="theme">Theme</p>
+              <div class="author-info">
+                <img src="https://picsum.photos/150/100" alt="Author Image">
+                <p class="author">John Doe</p>
+              </div>
+              <div class="flex-data">
+                <p class="date">October 10, 2023</p>
+                <p class="length">5 minutes read</p>
+              </div>
+              <div class="buttons">
+                <button class="news-btn"><a href="#"></a>Read</button>
+                <button class="news-btn"><a href="#"></a>Share</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="news-article">
+          <img class="news-article-img" src="https://picsum.photos/630/400" alt="News Image">
+          <div class="text-content">
+            <div class="news-content">
+              <h2>News Title</h2>
+              <p>News summary goes here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laborum distinctio
+                nostrum omnis, delectus ipsa adipisci voluptatibus. Doloribus provident magni, velit labore at obcaecati
+                sequi iure illo?</p>
+            </div>
+            <div class="details">
+              <p class="theme">Theme</p>
+              <div class="author-info">
+                <img src="https://picsum.photos/120/100" alt="Author Image">
+                <p class="author">John Doe</p>
+              </div>
+              <div class="flex-data">
+                <p class="date">October 10, 2023</p>
+                <p class="length">5 minutes read</p>
+              </div>
+              <div class="buttons">
+                <button class="news-btn"><a href="#"></a>Read</button>
+                <button class="news-btn"><a href="#"></a>Share</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="sports" class="sports-section news-section">
+      <h1>Sports News</h1>
+      <div class="grid">
+
+        <article class="news-article">
+          <img class="news-article-img" src="https://picsum.photos/660/400" alt="News Image">
+          <div class="text-content">
+            <div class="news-content">
+              <h2>News Title</h2>
+              <p>News summary goes here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laborum distinctio
+                nostrum omnis, delectus ipsa adipisci voluptatibus. Doloribus provident magni, velit labore at obcaecati
+                sequi iure illo?</p>
+            </div>
+            <div class="details">
+              <p class="theme">Theme</p>
+              <div class="author-info">
+                <img src="https://picsum.photos/160/100" alt="Author Image">
+                <p class="author">John Doe</p>
+              </div>
+              <div class="flex-data">
+                <p class="date">October 10, 2023</p>
+                <p class="length">5 minutes read</p>
+              </div>
+              <div class="buttons">
+                <button class="news-btn"><a href="#"></a>Read</button>
+                <button class="news-btn"><a href="#"></a>Share</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="news-article">
+          <img class="news-article-img" src="https://picsum.photos/700/400" alt="News Image">
+          <div class="text-content">
+            <div class="news-content">
+              <h2>News Title</h2>
+              <p>News summary goes here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laborum distinctio
+                nostrum omnis, delectus ipsa adipisci voluptatibus. Doloribus provident magni, velit labore at obcaecati
+                sequi iure illo?</p>
+            </div>
+            <div class="details">
+              <p class="theme">Theme</p>
+              <div class="author-info">
+                <img src="https://picsum.photos/180/100" alt="Author Image">
+                <p class="author">John Doe</p>
+              </div>
+              <div class="flex-data">
+                <p class="date">October 10, 2023</p>
+                <p class="length">5 minutes read</p>
+              </div>
+              <div class="buttons">
+                <button class="news-btn"><a href="#"></a>Read</button>
+                <button class="news-btn"><a href="#"></a>Share</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="news-article">
+          <img class="news-article-img" src="https://picsum.photos/650/400" alt="News Image">
+          <div class="text-content">
+            <div class="news-content">
+              <h2>News Title</h2>
+              <p>News summary goes here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laborum distinctio
+                nostrum omnis, delectus ipsa adipisci voluptatibus. Doloribus provident magni, velit labore at obcaecati
+                sequi iure illo?</p>
+            </div>
+            <div class="details">
+              <p class="theme">Theme</p>
+              <div class="author-info">
+                <img src="https://picsum.photos/190/100" alt="Author Image">
+                <p class="author">John Doe</p>
+              </div>
+              <div class="flex-data">
+                <p class="date">October 10, 2023</p>
+                <p class="length">5 minutes read</p>
+              </div>
+              <div class="buttons">
+                <button class="news-btn"><a href="#"></a>Read</button>
+                <button class="news-btn"><a href="#"></a>Share</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="news-article">
+          <img class="news-article-img" src="https://picsum.photos/640/400" alt="News Image">
+          <div class="text-content">
+            <div class="news-content">
+              <h2>News Title</h2>
+              <p>News summary goes here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laborum distinctio
+                nostrum omnis, delectus ipsa adipisci voluptatibus. Doloribus provident magni, velit labore at obcaecati
+                sequi iure illo?</p>
+            </div>
+            <div class="details">
+              <p class="theme">Theme</p>
+              <div class="author-info">
+                <img src="https://picsum.photos/110/100" alt="Author Image">
+                <p class="author">John Doe</p>
+              </div>
+              <div class="flex-data">
+                <p class="date">October 10, 2023</p>
+                <p class="length">5 minutes read</p>
+              </div>
+              <div class="buttons">
+                <button class="news-btn"><a href="#"></a>Read</button>
+                <button class="news-btn"><a href="#"></a>Share</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 News Site. All rights reserved.</p>
+    </footer>
+
+  </main>
+  <script src="./bundle.js"></script>
+</body>
+
 </html>
