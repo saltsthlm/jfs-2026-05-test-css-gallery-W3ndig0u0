@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /*E94F37*/
+  background-color: #fffffb;
+  color: #393E41;
+  width: 100vw;
+}
+
+button {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button a {
+  color: #393E41;
+  text-decoration: none;
+}
+
+
+.hero-section {
+  text-align: center;
+}
+
+.news-section {
+  text-align: center;
+}
+
+
+.news-section h1 {
+  border-bottom: 1px solid #393E41;
+  width: 80vw;
+  word-wrap: break-word;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+}

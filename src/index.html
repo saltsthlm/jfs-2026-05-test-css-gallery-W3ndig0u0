@@ -1,15 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS News</title>
-    <link href="/styles/font.css" rel="stylesheet">
-  </head>
-  <body>
-    <h1>Write your code here</h1>
-    <p>Put the CSS in separate files in the <code><big>src/styles</big></code> folder and link them in the html file</p>
-    <script src="./bundle.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS News</title>
+  <link href="/styles/style.css" rel="stylesheet">
+  <link href="/styles/newsArticle.css" rel="stylesheet">
+  <link href="/styles/font.css" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <section class="hero-section">
+      <h1>All the news</h1>
+      <h2>Welcome to my personal news outlet</h2>
+      <button><a href="#breaking">Breaking</a></button>
+      <button><a href="#international">International</a></button>
+      <button><a href="#sports">Sports</a></button>
+    </section>
+    <section id="breaking" class="breaking-section news-section">
+      <h1>Breaking News</h1>
+      <div class="grid">
+        <article class="news-article">
+          <img src="https://picsum.photos/600/400" alt="News Image">
+          <div class="text-content">
+            <div class="news-content">
+              <h2>News Title</h2>
+              <p>News summary goes here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laborum distinctio
+                nostrum omnis, delectus ipsa adipisci voluptatibus. Doloribus provident magni, velit labore at obcaecati
+                sequi iure illo?</p>
+            </div>
+            <div class="details">
+              <div class="author-info">
+                <img src="https://picsum.photos/100/100" alt="Author Image">
+                <p class="author">John Doe</p>
+              </div>
+              <span class="theme">Space</span>
+              <div class="flex-deta">
+                <p class="date">October 10, 2023</p>
+                <p class="length">5 minutes read</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+    <section id="international" class="international-section news-section">
+      <h1>International News</h1>
+      <div class="grid">
+
+
+      </div>
+    </section>
+
+    <section id="sports" class="sports-section news-section">
+      <h1>Sports News</h1>
+      <div class="grid">
+
+
+      </div>
+    </section>
+
+  </main>
+  <script src="./bundle.js"></script>
+</body>
+
 </html>
